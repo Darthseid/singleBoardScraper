@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>062f216e-1046-4916-8bb6-2885155ef927</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>run_scraper.py</StartupFile>
+    <StartupFile>pyFiles\run_scraper.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,16 +21,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="anti_ban.py" />
-    <Compile Include="extraction.py" />
-    <Compile Include="models.py" />
-    <Compile Include="output.py" />
-    <Compile Include="pagination.py" />
-    <Compile Include="run_scraper.py" />
-    <Compile Include="websiteKeyword.py" />
+    <Compile Include="pyFiles\anti_ban.py" />
+    <Compile Include="pyFiles\extraction.py" />
+    <Compile Include="pyFiles\models.py" />
+    <Compile Include="pyFiles\output.py" />
+    <Compile Include="pyFiles\pagination.py" />
+    <Compile Include="pyFiles\run_scraper.py" />
+    <Compile Include="pyFiles\websiteKeyword.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pyFiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
